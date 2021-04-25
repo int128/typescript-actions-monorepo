@@ -1,0 +1,7 @@
+name: update-generated-files
+description: push if there is changed file(s)
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: ${{ github.action_path }}/run.sh

@@ -7,10 +7,11 @@ It is based on https://github.com/actions/typescript-action.
 
 ## Features
 
-- Set up configuration for Monorepo
+- Configuration for both yarn and vscode
   - [Yarn Workspaces](https://classic.yarnpkg.com/en/docs/workspaces/)
   - TypeScript
   - Jest
   - ESLint
   - Prettier
-- Automatically update generated files such as `dist`
+- Continuous update of dependencies
+  - Regenerate `dist` on pull request from Renovate

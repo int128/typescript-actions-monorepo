@@ -40,3 +40,11 @@ jobs:
       - run: yarn package
         working-directory: hello-world
       - uses: ./.github/actions/update-generated-files
+
+  e2e-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./hello-world
+        with:
+          name: foo

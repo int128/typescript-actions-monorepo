@@ -14,6 +14,6 @@
     "all": "npm run build && npm run format && npm run lint && npm run package && npm test"
   },
   "dependencies": {
-    "@actions/core": "^1.2.6"
+    "@actions/core": "1.2.7"
   }
 }

@@ -5,11 +5,13 @@ on:
     branches: [main]
     paths:
       - hello-world/**
+      - '*.json'
       - .github/workflows/hello-world.yaml
   pull_request:
     branches: [main]
     paths:
       - hello-world/**
+      - '*.json'
       - .github/workflows/hello-world.yaml
 
 jobs:

@@ -15,3 +15,8 @@ It is based on https://github.com/actions/typescript-action.
   - Prettier
 - Continuous update of dependencies
   - Regenerate `dist` on pull request from Renovate
+
+
+## Example action
+
+[![hello-world](https://github.com/int128/typescript-actions-monorepo/actions/workflows/hello-world.yaml/badge.svg)](https://github.com/int128/typescript-actions-monorepo/actions/workflows/hello-world.yaml)

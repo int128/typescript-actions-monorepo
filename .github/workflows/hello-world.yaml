@@ -31,11 +31,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
       - run: yarn
-      - run: yarn format-check
       - run: yarn lint
       - run: yarn test
 
-  build:
+  generate:
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -53,12 +52,13 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
       - run: yarn
+      - run: yarn format
       - run: yarn build
       - run: yarn package
       - uses: int128/update-generated-files-action@main
 
   e2e-test:
-    needs: [build]
+    needs: [generate]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

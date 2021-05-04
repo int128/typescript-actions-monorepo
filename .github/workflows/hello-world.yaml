@@ -58,9 +58,12 @@ jobs:
       - uses: ./.github/actions/update-generated-files
 
   e2e-test:
+    needs: [build]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
       - uses: ./hello-world
         with:
           name: foo

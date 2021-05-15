@@ -1,13 +1,14 @@
 import * as core from '@actions/core'
-import { getMessage } from './message'
+import { run } from './run'
 
-async function run(): Promise<void> {
+const main = async (): Promise<void> => {
   try {
-    const name = core.getInput('name', { required: true })
-    core.info(getMessage(name))
+    await run({
+      name: core.getInput('name', { required: true }),
+    })
   } catch (error) {
     core.setFailed(error.message)
   }
 }
 
-run()
+main()

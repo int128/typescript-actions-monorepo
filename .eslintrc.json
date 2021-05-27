@@ -50,5 +50,11 @@
     "node": true,
     "es6": true,
     "jest/globals": true
-  }
+  },
+  "ignorePatterns": [
+    "dist/",
+    "lib/",
+    "node_modules/",
+    "jest.config.js"
+  ]
 }

@@ -1,0 +1,48 @@
+name: release
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - .github/workflows/release.yaml
+  push:
+    branches:
+      - main
+
+jobs:
+  tag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - id: yarn-cache-dir
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - uses: actions/cache@v2
+        with:
+          path: ${{ steps.yarn-cache-dir.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+      - run: yarn
+      - run: yarn workspaces run generate
+      - if: github.event_name == 'push'
+        env:
+          LATEST_TAG: v1
+        run: |
+          set -eux
+          test -f dist/index.js
+          git add .
+          git status
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m "Release $LATEST_TAG"
+          git tag -f "$LATEST_TAG"
+          git push origin -f "$LATEST_TAG"
+
+  hello-world:
+    needs: [tag]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: int128/typescript-actions-monorepo/hello-world@v1
+        with:
+          name: bar

@@ -22,8 +22,6 @@ jobs:
         working-directory: hello-world
     steps:
       - uses: actions/checkout@v2
-        with:
-          ref: ${{ github.head_ref }}
       - id: yarn-cache-dir
         run: echo "::set-output name=dir::$(yarn cache dir)"
       - uses: actions/cache@v2
@@ -41,5 +39,3 @@ jobs:
         uses: ./hello-world
         with:
           name: foo
-
-      - uses: int128/update-generated-files-action@main

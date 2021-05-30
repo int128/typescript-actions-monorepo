@@ -30,7 +30,6 @@ jobs:
           LATEST_TAG: v1
         run: |
           set -eux
-          test -f dist/index.js
           git add .
           git status
           git config user.name 'github-actions[bot]'

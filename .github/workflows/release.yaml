@@ -2,13 +2,11 @@ name: release
 
 on:
   pull_request:
-    branches:
-      - main
+    branches: [main]
     paths:
       - .github/workflows/release.yaml
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   tag:
@@ -24,24 +22,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
       - run: yarn
-      - run: yarn workspaces run generate
+      - run: yarn workspaces run ci:package
       - if: github.event_name == 'push'
-        env:
-          LATEST_TAG: v1
-        run: |
-          set -eux
-          git add .
-          git status
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m "Release $LATEST_TAG"
-          git tag -f "$LATEST_TAG"
-          git push origin -f "$LATEST_TAG"
-
-  hello-world:
-    needs: [tag]
-    runs-on: ubuntu-latest
-    steps:
-      - uses: int128/typescript-actions-monorepo/hello-world@v1
+        uses: ./.github/actions/release
         with:
-          name: bar
+          tag-name: v1

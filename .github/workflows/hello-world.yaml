@@ -32,8 +32,10 @@ jobs:
             ${{ runner.os }}-yarn-
       - run: yarn
       - run: yarn lint
+      - run: yarn format-check
       - run: yarn test
-      - run: yarn generate
+      - run: yarn build
+      - run: yarn package
 
       - name: e2e-test
         uses: ./hello-world

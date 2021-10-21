@@ -5,7 +5,7 @@
   ],
   "packageRules": [
     {
-      "matchPaths": "*/**",
+      "matchPaths": ["*/**"],
       "additionalBranchPrefix": "{{packageFileDir}}-",
       "commitMessageSuffix": "({{packageFileDir}})"
     }

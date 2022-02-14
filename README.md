@@ -2,8 +2,7 @@
 
 This is a template of monorepo for GitHub Actions written in TypeScript.
 Ready to develop on Visual Studio Code.
-
-It is based on https://github.com/actions/typescript-action.
+It is based on https://github.com/int128/typescript-action.
 
 ## Features
 
@@ -24,14 +23,14 @@ It is based on https://github.com/actions/typescript-action.
 | [hello-world](hello-world) | Hello World | [![hello-world](https://github.com/int128/typescript-actions-monorepo/actions/workflows/hello-world.yaml/badge.svg)](https://github.com/int128/typescript-actions-monorepo/actions/workflows/hello-world.yaml)
 
 
-## Release strategy
+## Development
 
-When you merge a pull request into `main` branch, the workflow will release it to a release tag (such as `v1`, defined in [`release` workflow](.github/workflows/release.yaml)).
-A release tag is shipped with `dist` files.
-`main` branch is not for production because it does not contain `dist` files.
+### Release workflow
 
-This brings the following advantages:
+When a pull request is merged into main branch, a new minor release is created by GitHub Actions.
+See https://github.com/int128/release-typescript-action for details.
 
-- It prevents conflict of `dist` files in a pull request
-- It reduces diff in a pull request
-- It does not interrupt Renovate automation
+### Dependency update
+
+You can enable Renovate to update the dependencies.
+This repository is shipped with the config https://github.com/int128/typescript-action-renovate-config.

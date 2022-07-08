@@ -16,12 +16,14 @@ on:
       - '*.js'
       - .github/workflows/hello-world.yaml
 
+defaults:
+  run:
+    working-directory: hello-world
+
 jobs:
-  ts:
+  test:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: hello-world
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -30,7 +32,6 @@ jobs:
           cache: yarn
       - run: yarn
       - run: yarn lint
-      - run: yarn format-check
       - run: yarn test
       - run: yarn build
       - run: yarn package
@@ -39,3 +40,18 @@ jobs:
         uses: ./hello-world
         with:
           name: foo
+
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: yarn
+      - run: yarn
+      - run: yarn format
+      - uses: int128/update-generated-files-action@v2

@@ -18,5 +18,8 @@
   },
   "workspaces": [
     "*"
-  ]
+  ],
+  "engines": {
+    "node": "16.x"
+  }
 }

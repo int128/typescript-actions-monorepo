@@ -6,7 +6,7 @@
   ],
   "packageRules": [
     {
-      "matchPaths": ["*/**"],
+      "description": "Update per action",
       "additionalBranchPrefix": "{{packageFileDir}}-",
       "commitMessageSuffix": "({{packageFileDir}})",
       "excludePackageNames": [

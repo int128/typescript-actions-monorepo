@@ -11,6 +11,7 @@
       "commitMessageSuffix": "({{packageFileDir}})",
       "excludePackageNames": [
         // update all action.yaml in single pull request
+        "node",
         "@types/node",
       ],
     }

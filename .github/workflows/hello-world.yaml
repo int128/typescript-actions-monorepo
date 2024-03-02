@@ -5,6 +5,7 @@ on:
     paths:
       - hello-world/**
       - '*.json'
+      - '*.lock'
       - .github/workflows/hello-world.yaml
   push:
     branches:
@@ -12,6 +13,7 @@ on:
     paths:
       - hello-world/**
       - '*.json'
+      - '*.lock'
       - .github/workflows/hello-world.yaml
 
 defaults:
@@ -27,11 +29,11 @@ jobs:
       - uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
         with:
           node-version: 20
-          cache: yarn
-      - run: yarn
-      - run: yarn test
-      - run: yarn build
-      - run: yarn package
+      - run: corepack enable pnpm
+      - run: pnpm i
+      - run: pnpm test
+      - run: pnpm build
+
       - name: Run hello-world
         uses: ./hello-world
         with:
@@ -48,8 +50,8 @@ jobs:
       - uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
         with:
           node-version: 20
-          cache: yarn
-      - run: yarn
-      - run: yarn lint --fix
-      - run: yarn format
+      - run: corepack enable pnpm
+      - run: pnpm i
+      - run: pnpm lint --fix
+      - run: pnpm format
       - uses: int128/update-generated-files-action@1bf39f3aec4afa88c0c7060cdb0d88332c052991 # v2.48.0

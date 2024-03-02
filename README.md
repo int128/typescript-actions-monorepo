@@ -7,7 +7,7 @@ It is based on https://github.com/int128/typescript-action.
 ## Features
 
 - Configuration for both yarn and vscode
-  - [Yarn Workspaces](https://classic.yarnpkg.com/en/docs/workspaces/)
+  - [pnpm Workspace](https://pnpm.io/workspaces)
   - TypeScript
   - Jest
   - ESLint
@@ -15,13 +15,11 @@ It is based on https://github.com/int128/typescript-action.
 - Continuous update of dependencies using Renovate
 - Automated release
 
-
 ## Actions
 
-| Name | Description | Status
-|------|-------------|-------
-| [hello-world](hello-world) | Hello World | [![hello-world](https://github.com/int128/typescript-actions-monorepo/actions/workflows/hello-world.yaml/badge.svg)](https://github.com/int128/typescript-actions-monorepo/actions/workflows/hello-world.yaml)
-
+| Name                       | Description | Status                                                                                                                                                                                                         |
+| -------------------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [hello-world](hello-world) | Hello World | [![hello-world](https://github.com/int128/typescript-actions-monorepo/actions/workflows/hello-world.yaml/badge.svg)](https://github.com/int128/typescript-actions-monorepo/actions/workflows/hello-world.yaml) |
 
 ## Development
 

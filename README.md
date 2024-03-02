@@ -6,7 +6,7 @@ It is based on https://github.com/int128/typescript-action.
 
 ## Features
 
-- Configuration for both yarn and vscode
+- Configurations
   - [pnpm Workspace](https://pnpm.io/workspaces)
   - TypeScript
   - Jest

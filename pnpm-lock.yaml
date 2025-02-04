@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@eslint/js':
+        specifier: 9.19.0
+        version: 9.19.0
       '@tsconfig/node20':
         specifier: 20.1.4
         version: 20.1.4
@@ -32,6 +35,9 @@ importers:
       jest:
         specifier: 29.7.0
         version: 29.7.0(@types/node@20.17.16)
+      pnpm:
+        specifier: 10.1.0
+        version: 10.1.0
       prettier:
         specifier: 3.4.2
         version: 3.4.2
@@ -1394,6 +1400,11 @@ packages:
   pkg-dir@4.2.0:
     resolution: {integrity: sha512-HRDzbaKjC+AOWVXxAU/x54COGeIv9eb+6CkDSQoNTt4XyWoIJvuPsXizxu/Fr23EiekbtZwmh1IcIG/l/a10GQ==}
     engines: {node: '>=8'}
+
+  pnpm@10.1.0:
+    resolution: {integrity: sha512-yJhHsGZ92rUDlru9AIoqQ887WB79Wc9dmqiSPqH7S4EGwEHVQNCKywlQN1lNc+vFHh7InuQMiLMLimbA+uCsGw==}
+    engines: {node: '>=18.12'}
+    hasBin: true
 
   prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
@@ -3369,6 +3380,8 @@ snapshots:
   pkg-dir@4.2.0:
     dependencies:
       find-up: 4.1.0
+
+  pnpm@10.1.0: {}
 
   prelude-ls@1.2.1: {}
 

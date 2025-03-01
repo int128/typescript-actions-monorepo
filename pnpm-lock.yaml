@@ -36,8 +36,8 @@ importers:
         specifier: 29.7.0
         version: 29.7.0(@types/node@20.17.21)
       pnpm:
-        specifier: 10.4.1
-        version: 10.4.1
+        specifier: 10.5.2
+        version: 10.5.2
       prettier:
         specifier: 3.5.2
         version: 3.5.2
@@ -69,8 +69,8 @@ packages:
   '@actions/exec@1.1.1':
     resolution: {integrity: sha512-+sCcHHbVdk93a0XT19ECtO/gIXoxvdsgQLzb2fE2/5sIZmWQuluYyjPQtrtTHdU1YzTZ7bAPN4sITq2xi1679w==}
 
-  '@actions/http-client@2.2.0':
-    resolution: {integrity: sha512-q+epW0trjVUUHboliPb4UF9g2msf+w61b32tAkFEwL/IwP0DQWgbCMM0Hbe3e3WXSKz5VcUXbzJQgy8Hkra/Lg==}
+  '@actions/http-client@2.2.3':
+    resolution: {integrity: sha512-mx8hyJi/hjFvbPokCg4uRd4ZX78t+YyRPtnKWwIl+RzNaVuFpQHfmlGVfsKEJN8LwTCvL+DfVgAM04XaHkm6bA==}
 
   '@actions/io@1.1.3':
     resolution: {integrity: sha512-wi9JjgKLYS7U/z8PPbco+PvTb/nRWjeoFlJ1Qer83k/3C5PHQi28hiVdeE2kHXmIL99mQFawx8qt/JPjZilJ8Q==}
@@ -1397,8 +1397,8 @@ packages:
     resolution: {integrity: sha512-HRDzbaKjC+AOWVXxAU/x54COGeIv9eb+6CkDSQoNTt4XyWoIJvuPsXizxu/Fr23EiekbtZwmh1IcIG/l/a10GQ==}
     engines: {node: '>=8'}
 
-  pnpm@10.4.1:
-    resolution: {integrity: sha512-x1O2w616+hOvOI+m2AgDWgCOMOqZk/WMZmPivF/yFnmqg02wlJhxKapNSIuG31f3tjSYGy+CfNysxpjMDPuIrw==}
+  pnpm@10.5.2:
+    resolution: {integrity: sha512-2p3CjNP/QNBZIYgjWrJdMgKt2KIHr77caCIg5KACn/v/RWIQK55uRrTj+ei9U+bQXeSFRLDFfUsBeeIsdtEZmw==}
     engines: {node: '>=18.12'}
     hasBin: true
 
@@ -1642,8 +1642,8 @@ packages:
   undici-types@6.19.6:
     resolution: {integrity: sha512-e/vggGopEfTKSvj4ihnOLTsqhrKRN3LeO6qSN/GxohhuRv8qH9bNQ4B8W7e/vFL+0XTnmHPB4/kegunZGA4Org==}
 
-  undici@5.28.3:
-    resolution: {integrity: sha512-3ItfzbrhDlINjaP0duwnNsKpDQk3acHI3gVJ1z4fmwMK31k5G9OVIAMLSIaP6w4FaGkaAkN6zaQO9LUvZ1t7VA==}
+  undici@5.28.5:
+    resolution: {integrity: sha512-zICwjrDrcrUE0pyyJc1I2QzBkLM8FINsgOrt6WjA+BgajVq9Nxu2PbFFXUrAggLfDXlZGZBVZYw7WNV5KiBiBA==}
     engines: {node: '>=14.0'}
 
   update-browserslist-db@1.0.13:
@@ -1704,16 +1704,16 @@ snapshots:
   '@actions/core@1.11.1':
     dependencies:
       '@actions/exec': 1.1.1
-      '@actions/http-client': 2.2.0
+      '@actions/http-client': 2.2.3
 
   '@actions/exec@1.1.1':
     dependencies:
       '@actions/io': 1.1.3
 
-  '@actions/http-client@2.2.0':
+  '@actions/http-client@2.2.3':
     dependencies:
       tunnel: 0.0.6
-      undici: 5.28.3
+      undici: 5.28.5
 
   '@actions/io@1.1.3': {}
 
@@ -3376,7 +3376,7 @@ snapshots:
     dependencies:
       find-up: 4.1.0
 
-  pnpm@10.4.1: {}
+  pnpm@10.5.2: {}
 
   prelude-ls@1.2.1: {}
 
@@ -3567,7 +3567,7 @@ snapshots:
 
   undici-types@6.19.6: {}
 
-  undici@5.28.3:
+  undici@5.28.5:
     dependencies:
       '@fastify/busboy': 2.1.1
 

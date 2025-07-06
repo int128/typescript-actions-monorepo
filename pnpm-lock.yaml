@@ -31,7 +31,7 @@ importers:
         version: 29.0.1(@typescript-eslint/eslint-plugin@8.35.1(@typescript-eslint/parser@8.35.1(eslint@9.30.1)(typescript@5.8.3))(eslint@9.30.1)(typescript@5.8.3))(eslint@9.30.1)(jest@30.0.4(@types/node@20.19.4))(typescript@5.8.3)
       eslint-plugin-prettier:
         specifier: 5.5.1
-        version: 5.5.1(eslint@9.30.1)(prettier@3.6.1)
+        version: 5.5.1(eslint@9.30.1)(prettier@3.6.2)
       jest:
         specifier: 30.0.4
         version: 30.0.4(@types/node@20.19.4)
@@ -39,8 +39,8 @@ importers:
         specifier: 10.12.4
         version: 10.12.4
       prettier:
-        specifier: 3.6.1
-        version: 3.6.1
+        specifier: 3.6.2
+        version: 3.6.2
       ts-jest:
         specifier: 29.4.0
         version: 29.4.0(@babel/core@7.27.4)(@jest/transform@30.0.4)(@jest/types@30.0.1)(babel-jest@30.0.4(@babel/core@7.27.4))(jest-util@30.0.2)(jest@30.0.4(@types/node@20.19.4))(typescript@5.8.3)
@@ -1611,8 +1611,8 @@ packages:
     resolution: {integrity: sha512-GbK2cP9nraSSUF9N2XwUwqfzlAFlMNYYl+ShE/V+H8a9uNl/oUqB1w2EL54Jh0OlyRSd8RfWYJ3coVS4TROP2w==}
     engines: {node: '>=6.0.0'}
 
-  prettier@3.6.1:
-    resolution: {integrity: sha512-5xGWRa90Sp2+x1dQtNpIpeOQpTDBs9cZDmA/qs2vDNN2i18PdapqY7CmBeyLlMuGqXJRIOPaCaVZTLNQRWUH/A==}
+  prettier@3.6.2:
+    resolution: {integrity: sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -2935,10 +2935,10 @@ snapshots:
       - supports-color
       - typescript
 
-  eslint-plugin-prettier@5.5.1(eslint@9.30.1)(prettier@3.6.1):
+  eslint-plugin-prettier@5.5.1(eslint@9.30.1)(prettier@3.6.2):
     dependencies:
       eslint: 9.30.1
-      prettier: 3.6.1
+      prettier: 3.6.2
       prettier-linter-helpers: 1.0.0
       synckit: 0.11.8
 
@@ -3777,7 +3777,7 @@ snapshots:
     dependencies:
       fast-diff: 1.3.0
 
-  prettier@3.6.1: {}
+  prettier@3.6.2: {}
 
   pretty-format@30.0.0:
     dependencies:

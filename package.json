@@ -16,7 +16,7 @@
     "eslint-plugin-prettier": "5.5.1",
     "jest": "30.0.4",
     "pnpm": "10.12.4",
-    "prettier": "3.6.1",
+    "prettier": "3.6.2",
     "ts-jest": "29.4.0",
     "typescript": "5.8.3",
     "typescript-eslint": "8.35.1"

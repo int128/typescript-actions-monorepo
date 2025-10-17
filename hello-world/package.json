@@ -3,7 +3,7 @@
   "name": "hello-world",
   "version": "0.0.0",
   "scripts": {
-    "lint": "eslint .",
+    "check": "biome check",
     "build": "ncc build --source-map --license licenses.txt src/main.ts",
     "test": "jest"
   },

@@ -27,8 +27,8 @@ importers:
         specifier: 30.2.0
         version: 30.2.0(@types/node@20.19.20)
       pnpm:
-        specifier: 10.17.1
-        version: 10.17.1
+        specifier: 10.18.2
+        version: 10.18.2
       ts-jest:
         specifier: 29.4.5
         version: 29.4.5(@babel/core@7.27.4)(@jest/transform@30.2.0)(@jest/types@30.2.0)(babel-jest@30.2.0(@babel/core@7.27.4))(jest-util@30.2.0)(jest@30.2.0(@types/node@20.19.20))(typescript@5.9.3)
@@ -1246,8 +1246,8 @@ packages:
     resolution: {integrity: sha512-HRDzbaKjC+AOWVXxAU/x54COGeIv9eb+6CkDSQoNTt4XyWoIJvuPsXizxu/Fr23EiekbtZwmh1IcIG/l/a10GQ==}
     engines: {node: '>=8'}
 
-  pnpm@10.17.1:
-    resolution: {integrity: sha512-F8Vg/KSGeulHOjiZrYSogzSRTzeb5G1FXL+S5c9LOdNJhdRS0lg7rxmWf6dstcF7yeJFUp0LmHRXIapyAOyveg==}
+  pnpm@10.18.2:
+    resolution: {integrity: sha512-n7lp+nSbOt5gNeDxCfC4pgtdCKGof99y4zfakNzJMzbiKAyk5E8jWKZJuDwXlZ6Zk+d3wggIefOAHm8NmZrT3Q==}
     engines: {node: '>=18.12'}
     hasBin: true
 
@@ -2974,7 +2974,7 @@ snapshots:
     dependencies:
       find-up: 4.1.0
 
-  pnpm@10.17.1: {}
+  pnpm@10.18.2: {}
 
   pretty-format@30.0.0:
     dependencies:

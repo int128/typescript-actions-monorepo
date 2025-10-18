@@ -1,3 +1,4 @@
+import { expect, test } from 'vitest'
 import { run } from '../src/run.js'
 
 test('run successfully', async () => {

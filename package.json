@@ -2,24 +2,19 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "format": "prettier --write **/*.ts"
+    "check": "biome check"
   },
   "type": "module",
   "devDependencies": {
-    "@eslint/js": "9.37.0",
+    "@biomejs/biome": "2.2.6",
     "@tsconfig/node20": "20.1.6",
     "@types/jest": "30.0.0",
     "@types/node": "20.19.20",
     "@vercel/ncc": "0.38.4",
-    "eslint": "9.37.0",
-    "eslint-plugin-jest": "29.0.1",
-    "eslint-plugin-prettier": "5.5.4",
     "jest": "30.2.0",
     "pnpm": "10.18.2",
-    "prettier": "3.6.2",
     "ts-jest": "29.4.5",
-    "typescript": "5.9.3",
-    "typescript-eslint": "8.46.0"
+    "typescript": "5.9.3"
   },
   "engines": {
     "node": "20.x"

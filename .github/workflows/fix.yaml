@@ -30,6 +30,5 @@ jobs:
           node-version: 20.19.5
       - run: npm install -g pnpm@latest-10
       - run: pnpm i
-      - run: pnpm run -r lint --fix
-      - run: pnpm run format
+      - run: pnpm run -r check --fix
       - uses: int128/update-generated-files-action@cb476932f792a2cc2409c6d2af6db9d39f5e296b # v2.62.0

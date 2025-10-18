@@ -9,9 +9,8 @@ It is based on https://github.com/int128/typescript-action.
 - Configurations
   - [pnpm Workspace](https://pnpm.io/workspaces)
   - TypeScript
-  - Jest
-  - ESLint
-  - Prettier
+  - Vitest
+  - Biome
 - Continuous update of dependencies using Renovate
 - Automated release
 

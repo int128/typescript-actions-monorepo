@@ -10,12 +10,12 @@
     "@tsconfig/node20": "20.1.6",
     "@types/node": "20.19.20",
     "@vercel/ncc": "0.38.4",
-    "pnpm": "10.18.2",
+    "pnpm": "10.18.3",
     "typescript": "5.9.3",
     "vitest": "2.1.9"
   },
   "engines": {
     "node": "20.x"
   },
-  "packageManager": "pnpm@10.18.2"
+  "packageManager": "pnpm@10.18.3"
 }

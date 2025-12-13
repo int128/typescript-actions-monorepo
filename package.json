@@ -2,7 +2,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "check": "biome check"
+    "check": "biome migrate --write && biome check --fix"
   },
   "type": "module",
   "devDependencies": {

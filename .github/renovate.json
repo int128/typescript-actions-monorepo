@@ -2,18 +2,17 @@
   "extends": [
     "github>int128/renovate-base",
     "github>int128/typescript-action-renovate-config#v1.10.0",
-    "helpers:pinGitHubActionDigests",
+    "helpers:pinGitHubActionDigests"
   ],
   "packageRules": [
     {
-      "description": "Update per action",
+      "description": "Split updates per action",
       "additionalBranchPrefix": "{{packageFileDir}}-",
       "commitMessageSuffix": "({{packageFileDir}})",
-      "excludePackageNames": [
-        // update all action.yaml in single pull request
-        "node",
-        "@types/node",
-      ],
+      "matchPackageNames": [
+        "!node",
+        "!@types/node"
+      ]
     }
   ]
 }

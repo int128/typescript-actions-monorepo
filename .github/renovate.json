@@ -14,5 +14,6 @@
         "!@types/node"
       ]
     }
-  ]
+  ],
+  "platformAutomerge": true
 }

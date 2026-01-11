@@ -9,10 +9,7 @@
       "description": "Split updates per action",
       "additionalBranchPrefix": "{{packageFileDir}}-",
       "commitMessageSuffix": "({{packageFileDir}})",
-      "matchPackageNames": [
-        "!node",
-        "!@types/node"
-      ]
+      "matchPackageNames": ["!node", "!@types/node"]
     }
   ],
   "platformAutomerge": true

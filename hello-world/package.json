@@ -9,6 +9,6 @@
   },
   "type": "module",
   "dependencies": {
-    "@actions/core": "2.0.2"
+    "@actions/core": "2.0.3"
   }
 }

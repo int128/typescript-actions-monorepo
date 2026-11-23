@@ -1,5 +1,5 @@
 {
-  "root": false,
-  "$schema": "https://biomejs.dev/schemas/2.6.8/schema.json",
-  "extends": "//"
+	"root": false,
+	"$schema": "https://biomejs.dev/schemas/2.6.8/schema.json",
+	"extends": "//"
 }
